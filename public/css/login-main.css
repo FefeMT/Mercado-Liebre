@@ -1,0 +1,36 @@
+main{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #ebebeb;
+}
+main form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: stretch;
+    width: 70vw;
+    height: 40vh;
+}
+main form label{
+    display: flex;
+    align-self: center;
+}
+
+main form input{
+    display: flex;
+    outline: none;
+    padding: 1rem;
+   
+}
+
+main form button{
+    color: white;
+    display: flex;
+    
+    background-color: #1259c3;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+}

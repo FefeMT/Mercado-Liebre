@@ -1,0 +1,113 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+}
+
+main section h2{
+    color: #666;
+    font-size: 1.5rem;
+    margin: 1rem;
+    align-self: flex-start;
+}
+
+main section ul{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+main section ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0.625rem;
+    background-color: white;
+    width: 100%;
+}
+
+main section ul li img{
+    width: 100%;
+}
+
+main section ul li article{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 0.0625rem #ebebeb;
+    padding: 0.9375rem;
+    position:relative;
+}
+
+main section ul li article i.fa-truck{
+    display: block;
+    font-size: 1rem;
+    color:#39b54a;
+    border: solid 0.0625rem #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0.3125rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    position:absolute;
+    top: -0.9375rem;
+    right: 1.25rem;
+}
+
+main section ul li article p.precio{
+    display: flex;
+    flex-grow: 0.3;
+    font-size: 1.125rem;
+}
+
+main section ul li article p.descuento{
+    display: flex;
+    flex-grow: 0.7;
+    font-size: 1rem;
+    color:#39b54a;
+}
+
+main section ul li article p.descripcion{
+    display: none;
+    width: 100%;
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    main section ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    main section ul li{
+        width: 40vw;
+        box-shadow: 0rem 0rem 0.625rem rgb(100, 100, 100);
+    }
+    main section ul li article p.descripcion{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    main section ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-be;
+        
+    }
+    main section ul li{
+        width: 20vw;
+    }
+}
