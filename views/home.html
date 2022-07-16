@@ -15,28 +15,30 @@
     <header>
         <img src="../img/mercadoLiebre.svg" alt="Mercado liebre logo"></img>
 
-        <form action = “/“ method = “get” class="barra-de-busqueda">
-            <label for = “query” > Search </label>
-            <input type = “text” name = “q“ id = “query”>
-            <button type = “button”><i class="fa-solid fa-search"></i></button >
+        <form action=“/“ method=“get” id="barra-de-busqueda">
+            <input type=“search” name=“q“ id=“query” placeholder="Buscar productos, marcas y más">
+            <button type=“submit”><i class="fa-solid fa-search"></i></button>
         </form>
 
-        <p class="compra-en-cuotas"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-        <nav class="site">
-            <a href="" target="_blank" title="Ofertas">Ofertas</a>
-            <a href="" target="_blank" title="Tiendas Oficiales">Tiendas Oficiales</a>
-            <a href="" target="_blank" title="Vender">Vender</a>
-            <a href="" target="_blank" title="Ayuda">Ayuda</a>
-        </nav>
-        <nav class="log-in-navbar">
-                <a href="/register" target="_blank" title="Creá tu cuenta">Creá tu cuenta<i class="fa-solid fa-id-card"></i></a>
-                <a href="/login" target="_blank" title="Ingresá">Ingresá<i class="fa-solid fa-right-to-bracket"></i></a>
-                <a href="" target="_blank" title="Mis compras">Mis compras<i class="fa-solid fa-basket-shopping"></i></a>
-        </nav>
-        <nav class="burger-menu">
-            <a class="fas fa-bars" href="" target="_blank"></a>
-        </nav>
-        <picture class="imagen-banner"><img src="../img/banner.jpg" alt="Un banner"></img></picture>
+        <p id="compra-en-cuotas"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        <div id="navbar">
+            <nav id="site-navbar">
+                <a href="#" target="_blank" title="Ofertas">Ofertas</a>
+                <a href="#" target="_blank" title="Tiendas Oficiales">Tiendas Oficiales</a>
+                <a href="#" target="_blank" title="Vender">Vender</a>
+                <a href="#" target="_blank" title="Ayuda">Ayuda</a>
+            </nav>
+            <nav id="log-in-navbar">
+                    <a href="/register" target="_blank" title="Creá tu cuenta">Creá tu cuenta<i class="fa-solid fa-id-card"></i></a>
+                    <a href="/login" target="_blank" title="Ingresá">Ingresá<i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="#" target="_blank" title="Mis compras">Mis compras<i class="fa-solid fa-basket-shopping"></i></a>
+            </nav>
+            <nav id="burger-menu">
+                <a class="fas fa-bars" href="" target="_blank"></a>
+            </nav>
+        </div>
+        
+        <picture id="imagen-banner"><img src="../img/banner.jpg" alt="Un banner"></img></picture>
     </header>
     <main>
         <section>

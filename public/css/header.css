@@ -12,32 +12,35 @@ header img{
     display: flex;
     width: 50vw;
     height: auto;
+    padding: 1rem;
 }
-header .barra-de-busqueda{
+
+header #barra-de-busqueda{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     width: 50vw;
+   padding: 1rem;
+    box-sizing: border-box;
 }
 
-
-header nav{
-    display: none;
-    flex-direction: column;
-    margin: 1rem;
+header #barra-de-busqueda input{
+    display: flex;
+    flex-grow: 1;
+    outline: none;
+    padding: 1rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-header nav a{
+header #barra-de-busqueda button{
     display: flex;
     align-items: center;
-    color:black;
-    text-decoration: none;
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-header nav a i{
-    margin-left: 0.1875rem;
-}
-
-header p.compra-en-cuotas{
+header #compra-en-cuotas{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -45,20 +48,41 @@ header p.compra-en-cuotas{
     width: 100vw;
 }
 
-header p.compra-en-cuotas i{
+header #compra-en-cuotas i{
     margin-right: 0.1875rem;
 }
 
-header .burger-menu{
-    display: flex;
+header #navbar{
+    display:flex;
     justify-content: center;
-    align-self: center;
+}
+
+header #navbar #site-navbar{
+    display: none;
+}
+
+header #navbar #log-in-navbar{
+    display: none;
+}
+
+header #navbar nav a{
+    display: flex;
     align-items: center;
+    color:black;
+    text-decoration: none;
+}
+
+header #navbar #log-in-navbar a i{
+    margin-left: 0.1875rem;
+}
+
+header #burger-menu{
+    display: flex;
     font-size: 2em;
     margin: 1rem;
 }
 
-header a.fa-bars{
+header #burger-menu a.fa-bars{
     border: solid 0.0625rem #1259c3;
     border-radius: 15%;
     background-color: #1259c3; 
@@ -67,45 +91,40 @@ header a.fa-bars{
     padding: 0.5rem;
 }
 
-
-header .imagen-banner{
+header #imagen-banner{
     display: flex;
     width: 100vw;
 }
 
-header .imagen-banner img{
+header #imagen-banner img{
     width: 100%;
 }
 
-
-
 @media screen and (min-width: 768px){
-    header{
-        justify-content: space-between;
-    }
-    header nav{
-        display: flex;
-        align-self: flex-end;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-grow: 1;
-    }
-    header nav.site{
-        justify-content: space-around;
-    }
-    header nav.log-in-navbar{
-        justify-content: space-around;
-    }
-    header .burger-menu{
-        display: none;
-    }
     header img{
         width: 33vw;
     }
-    header .barra-de-busqueda{
+    header #barra-de-busqueda{
         width: 33vw;
     }
-    header p.compra-en-cuotas{
+    header #compra-en-cuotas{
         width: 33vw;
+    }
+    header #navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        width:100vw;
+    }
+    header #navbar #site-navbar{
+        display: flex;
+    }
+    header #navbar #log-in-navbar{
+        display: flex;
+    }
+    header #navbar nav a{
+        margin: 1rem;
+    }
+    header #burger-menu{
+        display: none;
     }
 }
