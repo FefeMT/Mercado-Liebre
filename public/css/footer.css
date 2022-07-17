@@ -1,6 +1,7 @@
 footer{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
@@ -43,7 +44,8 @@ footer section p{
     footer section{
         width: 29vw;
     }
-    footer section #copyright{
+    footer section#copyright{
         width: 100vw;
+        align-items: flex-start;
     }
 }
