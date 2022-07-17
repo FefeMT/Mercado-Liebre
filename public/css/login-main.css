@@ -9,7 +9,7 @@ main form{
     flex-direction: column;
     justify-content: space-around;
     width: 70vw;
-    height: 40vh;
+    height: 50vh;
 }
 
 main form input{
@@ -27,4 +27,9 @@ main form button{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    transition: background-color .5s;
+}
+
+main form button:hover{
+    background-color: #0022AA;
 }

@@ -60,6 +60,11 @@ main section ul li article i.fa-truck{
     position:absolute;
     top: -0.9375rem;
     right: 1.25rem;
+    transition: transform 1.5s;
+}
+
+main section ul li article i.fa-truck:hover{
+    transform: rotate(-90deg);
 }
 
 main section ul li article p.precio{
@@ -93,10 +98,18 @@ main section ul li article p.descripcion{
     }
     main section ul li{
         width: 40vw;
+        transition: box-shadow 0.5s;
+    }
+    main section ul li:hover{
         box-shadow: 0rem 0rem 0.625rem rgb(100, 100, 100);
     }
     main section ul li article p.descripcion{
         display: flex;
+        opacity: 0%;
+        transition: opacity 0.5s;
+    }
+    main section ul li article p.descripcion:hover{
+        opacity: 100%;
     }
 }
 

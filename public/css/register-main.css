@@ -30,7 +30,6 @@ main form input{
 main form button{
     color: white;
     display: flex;
-    background-color: #1259c3;
     padding: 1rem;
     justify-content: center;
     align-items: center;
@@ -71,6 +70,21 @@ main form #register-perfil-del-usuario{
 main form #input-foto-del-usuario{
     padding: 0;
 }
+
 main form button.boton-de-borrar{
     background-color: red;
+    transition: all .5s;
+}
+
+main form button.boton-de-borrar:hover{
+    background-color: rgb(187, 0, 0);
+}
+
+main form button.boton-de-envio{
+    background-color: #1259c3;
+    transition: all .5s;
+}
+
+main form button.boton-de-envio:hover{
+    background-color: #0022AA;
 }

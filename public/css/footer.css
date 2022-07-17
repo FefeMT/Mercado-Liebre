@@ -1,24 +1,49 @@
 footer{
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
 footer section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 1rem;
 }
 
 footer section h3{
+    display: flex;
     font-size: 2rem;
     color: #1259c3;
     margin-bottom: 0.625rem;
+    transition: color .5s;
+}
+
+footer section h3:hover{
+    color: #39b54a;
 }
 
 footer section h4{
-    margin: 0;
+    display: flex;
     font-size: 1rem;
     font-weight: bold;
 }
 
 footer section p{
+    display: flex;
     color: #666;
-    margin: 0;
+}
+
+@media screen and (min-width: 768px){
+    footer{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    footer section{
+        width: 29vw;
+    }
+    footer section #copyright{
+        width: 100vw;
+    }
 }
