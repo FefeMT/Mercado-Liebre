@@ -4,6 +4,7 @@ main{
     align-content: center;
     background-color: #ebebeb;
 }
+
 main form{
     display:flex;
     flex-direction: column;
