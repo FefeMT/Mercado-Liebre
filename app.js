@@ -7,7 +7,7 @@ const publicPath = path.resolve(__dirname,"./public");
 app.use(express.static(publicPath));
 
 const start = () => {
-    console.log("Arranca")
+    console.log(`Server on http://localhost:${port}`)
 };
 
 app.listen(port,start);
